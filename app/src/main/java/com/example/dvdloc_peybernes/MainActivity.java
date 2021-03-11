@@ -1,5 +1,6 @@
 package com.example.dvdloc_peybernes;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -176,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 //TODO
                 //Affichage du layOut de réservation
                 Intent intent = new Intent(MainActivity.this, Reservation.class);
-                startActivity(intent);
+                startActivityForResult(intent,1);
                 return true;
             case R.id.menuMagasins:
                 //TODO
@@ -186,6 +187,32 @@ public class MainActivity extends AppCompatActivity {
                 return true;
         }
         return true;
+    }
+
+    /**
+     * Cette méthode est appelée quand un résultat parvient à l'activité
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case 1 : //Interessant si plusieurs requestCode,
+                //ici le 1 correspond au retour depuis l'activité Reservation
+                switch (resultCode){
+                    case RESULT_OK:
+                        Toast.makeText(MainActivity.this,
+                                "Réservation confirmée", Toast.LENGTH_SHORT).show();
+                        break;
+                    case RESULT_CANCELED:
+                        Toast.makeText(MainActivity.this,
+                                "Réservation annulé", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                break;
+        }
     }
 
 }
