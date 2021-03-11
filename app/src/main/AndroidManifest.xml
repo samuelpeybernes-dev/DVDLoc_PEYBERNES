@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DVDLoc_PEYBERNES">
-        <activity android:name=".Reservation"></activity>
+        <activity android:name=".Recherche"></activity>
+        <activity android:name=".Reservation" />
         <activity android:name=".Serie" />
         <activity android:name=".Documentaire" />
         <activity android:name=".Fiction" />

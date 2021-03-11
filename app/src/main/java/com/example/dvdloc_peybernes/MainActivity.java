@@ -172,12 +172,16 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.menuRechercher:
                 //TODO
+                //Lance l'activité recherche
+                Intent intentRecherche = new Intent(MainActivity.this, Recherche.class);
+                //startActivity(intentRecherche);
+                startActivityForResult(intentRecherche, 2);
                 return true;
             case R.id.menuReserve:
                 //TODO
                 //Affichage du layOut de réservation
-                Intent intent = new Intent(MainActivity.this, Reservation.class);
-                startActivityForResult(intent,1);
+                Intent intentReserve = new Intent(MainActivity.this, Reservation.class);
+                startActivityForResult(intentReserve,1);
                 return true;
             case R.id.menuMagasins:
                 //TODO
@@ -212,7 +216,17 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case 2 :
+                //ici le 2 correspond au retour depuis l'activité Recherche
+                if (resultCode == RESULT_OK){
+                    String titre = data.getStringExtra("titre");
+                    Toast.makeText(MainActivity.this,
+                            titre,
+                            Toast.LENGTH_SHORT).show();
+                }
+                break;
         }
+        return;
     }
 
 }

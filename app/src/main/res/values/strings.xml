@@ -18,9 +18,16 @@
     <string name="txtReservation">Voulez vous réserver le film "Avatar" ?</string>
 
     <string name="txtListePoliciers">Liste des films policiers</string>
+    <string name="txtPoliciers">Titre demandé</string>
+
     <string name="txtListeFiction">Liste des films de fiction</string>
     <string name="txtListeDocu">Liste des documentaires</string>
     <string name="txtListeSerie">Liste des series</string>
+
+    <string name="txtTitreRecherche">Recherche</string>
+    <string name="txtRecherche">Quel film cherchez vous ?</string>
+    <string name="txtEditRecherche">Entrez un titre</string>
+    <string name="txtBtnOk">Ok</string>
 
     <string name="txtBtnRetour">Retour</string>
     <string name="txtBtnConfirmer">Confirmer</string>
