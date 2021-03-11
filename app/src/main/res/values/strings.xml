@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DVDLoc_PEYBERNES</string>
+    <string name="txtBtnPolicier">Policier</string>
+    <string name="txtBtnFiction">Fiction</string>
+    <string name="txtBtnDocu">Documentaire</string>
+    <string name="txtBtnSerie">Series</string>
+
+    <string name="txtTitreAccueil">Choisissez une catégorie</string>
+    <string name="txtMenuRecherche">Rechercher un film</string>
+    <string name="txtMenuReserve">Réserver un film</string>
+    <string name="txtMenuMagasins">Magasins</string>
+    <string name="txtMenuPrésentation">Présentation</string>
+    <string name="txtMenuPresContact">Contact</string>
+    <string name="txtMenuMenuPresEquipe">Equipe</string>
+    <string name="txtMenuPresCroissance">Croissance</string>
+
+    <string name="txtTitreReservation">Reservation</string>
+    <string name="txtReservation">Voulez vous réserver le film "Avatar" ?</string>
+
+    <string name="txtListePoliciers">Liste des films policiers</string>
+    <string name="txtListeFiction">Liste des films de fiction</string>
+    <string name="txtListeDocu">Liste des documentaires</string>
+    <string name="txtListeSerie">Liste des series</string>
+
+    <string name="txtBtnRetour">Retour</string>
+    <string name="txtBtnConfirmer">Confirmer</string>
+    <string name="txtBtnAnnuler">Annuler</string>
+</resources>
