@@ -7,7 +7,7 @@
     tools:context=".Documentaire">
 
     <Button
-        android:id="@+id/btnRetour"
+        android:id="@+id/btnRetourDocumentaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"

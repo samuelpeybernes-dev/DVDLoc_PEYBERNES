@@ -15,9 +15,9 @@ public class Documentaire extends AppCompatActivity {
         setContentView(R.layout.activity_documentaire);
 
         //Gestion du bouton btnRetour
-        final Button btnRetour = (Button) findViewById(R.id.btnRetour);
+        final Button btnRetourDocumentaire = (Button) findViewById(R.id.btnRetourDocumentaire);
         //Utilisation d'un listener pour récupérer l'interaction avec le bouton
-        btnRetour.setOnClickListener(new Button.OnClickListener()
+        btnRetourDocumentaire.setOnClickListener(new Button.OnClickListener()
         {
             @Override
             public void onClick(View arg0) {

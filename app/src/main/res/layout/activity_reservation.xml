@@ -44,7 +44,7 @@
         android:text="@string/txtBtnConfirmer"
         android:textSize="20sp"
         app:backgroundTint="@color/vert"
-        app:layout_constraintBottom_toTopOf="@+id/btnRetour"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetourRechercher"
         app:layout_constraintEnd_toStartOf="@+id/btnAnnule"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
-        android:id="@+id/btnRetour"
+        android:id="@+id/btnRetourReservation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"

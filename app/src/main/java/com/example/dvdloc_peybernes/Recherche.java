@@ -2,7 +2,6 @@ package com.example.dvdloc_peybernes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -42,9 +41,9 @@ public class Recherche extends AppCompatActivity {
 
 
             //Gestion du bouton btnRetour
-            final Button btnRetour = (Button) findViewById(R.id.btnRetour);
+            final Button btnRetourRechercher = (Button) findViewById(R.id.btnRetourRechercher);
             //Utilisation d'un listener pour récupérer l'interaction avec le bouton
-            btnRetour.setOnClickListener(new Button.OnClickListener()
+            btnRetourRechercher.setOnClickListener(new Button.OnClickListener()
             {
                 @Override
                 public void onClick(View arg0)

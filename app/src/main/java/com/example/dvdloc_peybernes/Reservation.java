@@ -42,9 +42,9 @@ public class Reservation extends AppCompatActivity
 
 
         //Gestion du bouton btnRetour
-        final Button btnRetour = (Button) findViewById(R.id.btnRetour);
+        final Button btnRetourReservation = (Button) findViewById(R.id.btnRetourReservation);
         //Utilisation d'un listener pour récupérer l'interaction avec le bouton
-        btnRetour.setOnClickListener(new Button.OnClickListener()
+        btnRetourReservation.setOnClickListener(new Button.OnClickListener()
         {
             @Override
             public void onClick(View arg0)

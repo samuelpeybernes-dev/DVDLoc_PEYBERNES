@@ -15,9 +15,9 @@ public class Serie extends AppCompatActivity {
         setContentView(R.layout.activity_serie);
 
         //Gestion du bouton btnRetour
-        final Button btnRetour = (Button) findViewById(R.id.btnRetour);
+        final Button btnRetourSerie = (Button) findViewById(R.id.btnRetourSerie);
         //Utilisation d'un listener pour récupérer l'interaction avec le bouton
-        btnRetour.setOnClickListener(new Button.OnClickListener()
+        btnRetourSerie.setOnClickListener(new Button.OnClickListener()
         {
             @Override
             public void onClick(View arg0) {
