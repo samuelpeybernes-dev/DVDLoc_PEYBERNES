@@ -44,7 +44,7 @@ public class Serie extends AppCompatActivity {
                         Log.i("LocDVD", "Réalisateur = " + uneSerie.getRealisateur());
 
                         //Récupération du nom de l'image dans drawable
-                        String path = getOpPackageName() + ":drawable/"
+                        String path = getPackageName() + ":drawable/"
                                          + xmlPullParser.getAttributeValue(3);
                         int resID = getResources().getIdentifier(path, null, null);
                         uneSerie.setImg(resID);
