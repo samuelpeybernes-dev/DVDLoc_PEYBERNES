@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -140,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast toast = Toast.makeText(getApplicationContext(), btnSerie.getText(), Toast.LENGTH_SHORT);
                         toast.show();
                         //Lance l'activité qui affiche la fenêtre Serie
-                        Intent intent = new Intent(MainActivity.this, Serie.class);
+                        Intent intent = new Intent(MainActivity.this, Series.class);
                         startActivity(intent);
                     }
                 });

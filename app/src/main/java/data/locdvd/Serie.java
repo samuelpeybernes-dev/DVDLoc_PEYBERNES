@@ -16,9 +16,10 @@ public class Serie {
     public void setImg(int img) {this.iImg = img;}
 
     //Accesseurs
-    public String getCat(){return this.strCat;}
-    public String getTitre(){return this.strTitre;}
-    public String getRealisateur(){return this.strRealisateur;}
-    public int getImg(){return this.iImg;}
-
+    public String getCat() {return this.strCat;}
+    public String getTitre() {return this.strTitre;}
+    public String getRealisateur() {return this.strRealisateur;}
+    public int getImg() {return this.iImg;}
 }
+
+

@@ -12,9 +12,11 @@ import android.widget.ListView;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Serie extends AppCompatActivity {
+import data.locdvd.Serie;
+import data.locdvd.SerieAdapter;
+
+public class Series extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,9 @@ public class Serie extends AppCompatActivity {
         //Tableau de séries
         ArrayList<Serie> lesSeries = new ArrayList<Serie>();
 
-        //ListView listeSeries = (ListView) findViewById(R.id.serie_listview);
-        //SerieAdapter adapterSerie = new SerieAdapter(this, R.layout.ligne);
+        ListView listeSeries = (ListView) findViewById(R.id.serie_listview);
+        SerieAdapter adapterSerie = new SerieAdapter(this, R.layout.ligne);
+
 
         try{
             XmlPullParser xmlPullParser=getResources().getXml(R.xml.liste_serie);
@@ -37,23 +40,23 @@ public class Serie extends AppCompatActivity {
                     if (xmlPullParser.getName().equals("dvd")){
                         Serie uneSerie = new Serie();
                         uneSerie.setCat(xmlPullParser.getAttributeValue(0));
-                        Log.i("LocDVD", "Cat = " + uneSerie.getCat());
+                        //Log.i("LocDVD", "Cat = " + uneSerie.getCat());
                         uneSerie.setTitre(xmlPullParser.getAttributeValue(1));
-                        Log.i("LocDVD", "Titre = " + uneSerie.getTitre());
+                        //Log.i("LocDVD", "Titre = " + uneSerie.getTitre());
                         uneSerie.setRealisateur(xmlPullParser.getAttributeValue(2));
-                        Log.i("LocDVD", "Réalisateur = " + uneSerie.getRealisateur());
+                        //Log.i("LocDVD", "Réalisateur = " + uneSerie.getRealisateur());
 
                         //Récupération du nom de l'image dans drawable
                         String path = getPackageName() + ":drawable/"
                                          + xmlPullParser.getAttributeValue(3);
                         int resID = getResources().getIdentifier(path, null, null);
                         uneSerie.setImg(resID);
-                        Log.i("LocDVD", "Img = " + uneSerie.getImg());
+                        //Log.i("LocDVD", "Img = " + uneSerie.getImg());
 
                         //Ajout de l'objet
                         lesSeries.add(uneSerie);
                         //Alimentation de l'adapter
-                        //adapterSerie.add(uneSerie);
+                        adapterSerie.add(uneSerie);
                     }
                 }
                 //Enregistrement suivant
@@ -61,7 +64,7 @@ public class Serie extends AppCompatActivity {
             }
         }
         catch (Exception e){
-            Log.i("LocDVD", "Erreurs trouvées = " + e.getMessage());
+            //Log.i("LocDVD", "Erreurs trouvées = " + e.getMessage());
             e.printStackTrace();
         }
         listeSeries.setAdapter(adapterSerie);
@@ -78,7 +81,7 @@ public class Serie extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 //Lance l'activité qui affiche la fenêtre Fiction
-                Intent intent = new Intent(Serie.this, MainActivity.class);
+                Intent intent = new Intent(Series.this, MainActivity.class);
                 startActivity(intent);
             }
         });
