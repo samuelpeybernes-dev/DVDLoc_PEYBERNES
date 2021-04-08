@@ -17,9 +17,11 @@ import data.locdvd.Serie;
 import data.locdvd.SerieAdapter;
 
 public class Series extends AppCompatActivity {
+    String url = "http://192.168.1.20/volley_serv/listeDvd.php";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_serie);
 
