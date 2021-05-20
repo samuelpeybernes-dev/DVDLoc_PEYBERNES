@@ -1,4 +1,4 @@
-package com.example.dvdloc_peybernes;
+    package com.example.dvdloc_peybernes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,7 +28,7 @@ import data.locdvd.Serie;
 import data.locdvd.SerieAdapter;
 
 public class Series extends AppCompatActivity {
-    String url = "http://192.168.1.21/volley_serv/listeDvd.php";
+    String url = "http://192.168.1.14/volley_serv/listeDvd.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

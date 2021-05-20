@@ -21,7 +21,7 @@ public class Recherche extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_recherche);
             //Association des attributs privés à la vue
-            edtCherche = findViewById(R.id.edtRecherche);
+            edtCherche = findViewById(R.id.edt_Email);
             btnCherche = findViewById(R.id.btnRecherche);
             // Création du listener
             btnCherche.setOnClickListener(new Button.OnClickListener()
