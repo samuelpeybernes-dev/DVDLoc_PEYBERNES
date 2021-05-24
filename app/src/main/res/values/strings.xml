@@ -32,4 +32,9 @@
     <string name="txtBtnRetour">Retour</string>
     <string name="txtBtnConfirmer">Confirmer</string>
     <string name="txtBtnAnnuler">Annuler</string>
+
+    <string name="txt_email">Email</string>
+    <string name="txt_pswd">Mot de passe</string>
+    <string name="txt_ok_login">Connexion</string>
+    <string name="txt_ok_register">Inscription</string>
 </resources>
